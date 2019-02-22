@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='cubis.conf'
-CONFIGFOLDER='/root/.cubis'
-COIN_DAEMON='cubisd'
+CONFIG_FILE='hydroxyde.conf'
+CONFIGFOLDER='/root/.hydroxyde'
+COIN_DAEMON='hydroxyded'
 COIN_CLI='cubis-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/zoldur/Cubis/releases/download/v1.0.0.0/cubis.tar.gz'
+COIN_TGZ='https://github.com/HydroxydeTech/Hydroxyde-Coin/releases/download/1.1.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Cubis'
-COIN_PORT=25333
-RPC_PORT=26333
+COIN_NAME='Hydroxyde'
+COIN_PORT=19313
+RPC_PORT=19314
 
 NODEIP=$(curl -s4 api.ipify.org)
 
